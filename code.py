@@ -8,7 +8,7 @@ from playsound import playsound
 import mysql.connector
 from colorama import Fore, Style
 
-masterpass="22b30fe60a3dd31411aae8a25c35d6c5950cc099b56bf5688dc20cd5165a1933"
+masterpass=""
 alph=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 alphc=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
 numbers=['1','2','3','4','5','6','7','8','9','0']
@@ -24,7 +24,7 @@ def access(p):
 
 while True:
     try:
-        mydb = mysql.connector.connect(host="localhost",user="root",passwd="kheshav")
+        mydb = mysql.connector.connect(host="",user="",passwd="")
         cursor = mydb.cursor()
         cursor.execute("use passwords")
         break
